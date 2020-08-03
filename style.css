@@ -1,5 +1,8 @@
+%{
+    box-sizing: border-box;
+}
 body{
-    background-color:black;
+    background-color:darkslategray;
     color:white;
 }
 #header_bar{
@@ -26,31 +29,198 @@ body{
     height:30px;
 }
 
-
+#vertical_slider ul{
+    position:absolute;
+    top:45vh;
+    right:70px;
+    list-style: none;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+#vertical_slider li{
+    width:20px;
+    height:20px;
+    margin:5px 0;
+}
+#vertical_slider span{
+    display:inline-block;
+    width:5px;
+    height:5px;
+    border-radius: 100%;
+    background-color:white;
+    opacity:0.5;
+}
+#vertical_slider .now span{
+    width:7px;
+    height:7px;
+    border:2px solid white;
+    opacity: 1;
+    background-color:black;
+    z-index: 99;
+}
 
 #background_slider{
-    position:relative;
+    position:absolute;
+    top:0;
+    left:0;
     width:100%;
-    border:1px solid gray;
-    height:500px;
+    height:100vh;
     overflow: hidden;
 }
 #inner {
-    height:500%;
-    transition: margin-top 600ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    height:calc(500% + 100px) ;
+    transition: margin-top 1200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 .back{
-    
     display:flex;
     width:100%;
-/*    height: calc(100vh - 200px);*/
-    height:20%;
+    height: calc(20% - 20px);
     justify-content: center;
     align-items: center;
 }
-.back2{
+
+
+/*back2*/
+#back2_container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#back2_container #back2_content{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    width:30%;
+    height:50%;
+    text-align:left;
+    margin-left:100px;
+}
+#back2_content .headcon{
+    text-decoration: bold;
+    font-size:30px;
+    width:80%;
+    padding-bottom: 50px;
+}
+#back2_content .subcon{
+    font-weight: normal;
+    font-size:15px;
+    width:90%;
+    opacity: 0.8;
+    padding-bottom: 50px;
+}
+#back2_content .button1 a{
+    display:inline-block;
+    width:150px;
+    height:50px;
+    border:1px solid white;
+    text-align: center;
+    border-radius:30px;
+}
+#back2_content .button1 span{
+    display:inline-block;
+    padding-top:12px;
+    
+}
+#back2_content .button1 img{
+    position:relative;
+    width:20px;
+    height:20px;
+    margin-left:10px;
+}
+#back2_container #back2_slider{
+    width:70%;
 }
 
-.showing{
-    
+/*back3*/
+#back3_container{
+    position:relative;
+    margin-top:15vh;
+    width:100%;
+    height:85vh;
+}
+#back3_content{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:0 100px;
+    height:6vh;
+}
+#back3_content #back3_header{
+    font-size:25px;
+}
+#back3_content #back3_sub{
+    font-size:15px;
+    text-align: right;
+}
+#back3_image_container{
+    height:70vh;
+
+    margin-top:9vh;
+}
+#back3_images{
+    display:flex;
+    align-content: center;
+}
+
+#back3_images .back3_image{
+    position:relative;
+    width:calc(100vw/6);
+    height:70vh;
+}
+.back3_1{
+    background-image: url("images/cowgirl_cut.jpg");
+    background-size: 300px;
+    background-position: center;
+}
+.back3_2{
+    background-image: url("images/astronaut.jpg");
+    background-size:500px;
+    background-position: center;
+}
+.back3_3{
+    background-image: url("images/city.jpg");
+    background-size:500px;
+    background-position: center;
+}
+.back3_4{
+    background-image: url("images/greek_cut.jpg");
+    background-size:350px;
+    background-position: center;
+}
+.back3_5{
+    background-image: url("images/pigs.jpg");
+    background-size:500px;
+    background-position: center;
+}
+.back3_6{
+    background-image: url("images/space-shuttle.jpg");
+    background-size:500px;
+    background-position: center;
+}
+
+
+
+
+/*foot*/
+.foot{
+    height:200px;
+    background-color: black;
+}
+#foot_container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+#foot_logo, #foot_social_logo {
+    padding:50px;
+}
+#foot_sub{
+    opacity:0.5;
 }
