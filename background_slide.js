@@ -41,7 +41,7 @@ function handleWheel(event){
             BACK5.classList.add(SHOWING);
             buttonCurrent.firstElementChild.classList.remove(NOW);
             nextButton.firstElementChild.classList.add(NOW);
-        } else{
+        } else if(current.classList.contains('back5')){
             Inner.style.marginTop = 'calc(-400vh - 200px)';
             current.classList.remove(SHOWING);
             FOOT.classList.add(SHOWING);
@@ -74,7 +74,7 @@ function handleWheel(event){
             BACK4.classList.add(SHOWING);
             buttonCurrent.firstElementChild.classList.remove(NOW);
             previousButton.firstElementChild.classList.add(NOW);
-        } else{
+        } else if(current.classList.contains('foot')){
             Inner.style.marginTop = '-400vh';
             current.classList.remove(SHOWING);
             BACK5.classList.add(SHOWING);

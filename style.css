@@ -1,9 +1,13 @@
-%{
+*{
     box-sizing: border-box;
 }
 body{
-    background-color:darkslategray;
+    background-color:#212121;
     color:white;
+}
+header{
+    position: relative;
+    z-index: 99;
 }
 #header_bar{
     margin-top:30px;
@@ -11,6 +15,7 @@ body{
     justify-content:space-between;
     align-items: center;
     padding:0 50px;
+    z-index:99;
 }
 #bar_menu, #side_menu{
     opacity: 0.8;
@@ -57,8 +62,10 @@ body{
     border:2px solid white;
     opacity: 1;
     background-color:black;
-    z-index: 99;
+    z-index: 100;
 }
+
+
 
 #background_slider{
     position:absolute;
@@ -67,6 +74,7 @@ body{
     width:100%;
     height:100vh;
     overflow: hidden;
+    z-index: 9;
 }
 #inner {
     height:calc(500% + 100px) ;
@@ -78,8 +86,11 @@ body{
     height: calc(20% - 20px);
     justify-content: center;
     align-items: center;
+    z-index:0;
 }
-
+.back1, .back2, .back3, .back4, .back5 {
+/*    background-color:#212121;*/
+}
 
 /*back2*/
 #back2_container{
@@ -165,11 +176,11 @@ body{
     display:flex;
     align-content: center;
 }
-
 #back3_images .back3_image{
     position:relative;
     width:calc(100vw/6);
     height:70vh;
+    opacity:0.9;
 }
 .back3_1{
     background-image: url("images/cowgirl_cut.jpg");
@@ -201,9 +212,104 @@ body{
     background-size:500px;
     background-position: center;
 }
+.content_3{
+    position:relative;
+    top:320px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:1;
+}
+.content_3 .button2{
+    width:100px;
+    height:40px;
+    border:3px solid white;
+    border-radius:15px;
+    line-height: 30px;
+    text-align: center;
+}
+#back3_images .button2 span{
+    padding: 5px;
+}
 
+/*back4*/
+/*back5*/
+#back5_container{
+    position:relative;
+    margin-top:15vh;
+    width:100%;
+    height:85vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#back5_container #back5_header, #back5_footer{
+    height: 20%;
+    line-height: 17vh;
+}
+#back5_container #back5_body{
+    width:90%;
+    height:60%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.back5_1{
+    width:49%;
+    height: 100%;
+    border-radius:30px;
+}
+.back5_2, .back5_3{
+    width:24%;
+    height:100%;
+    border-radius:30px;
+}
+.img_back{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+#back5_1_back, #back5_2_back, #back5_3_back{
+    position: relative;
+    width:100%;
+    height:100%;
+    background-position: center;
+/*    background-size:100%;*/
+    z-index:-1;
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+#back5_1_back{
+    background-image: url(http://www.dexterstudios.com/wp-content/uploads/2020/04/new-thum.jpg);
+}
+#back5_2_back{
+    background-image: url(http://www.dexterstudios.com/wp-content/uploads/2020/05/new-thum43.jpg);
+}
+#back5_3_back{
+    background-image: url(http://www.dexterstudios.com/wp-content/uploads/2020/05/new-thum422.jpg);
+}
+.img_mouseover{
+/*    transform: scale(1.5);*/
+    background-size:150%;
+}
 
-
+.back5_sub{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    position: relative;
+    top:-100px;
+    left:20px;
+    z-index: 10;
+}
+#news{
+    width:60px;
+    margin:10px;
+    padding:5px;
+    border:2px solid white;
+    opacity:0.8;
+}
 
 /*foot*/
 .foot{
