@@ -1,0 +1,31 @@
+.wrapper-slider {
+    position: relative;
+    width: 90%;
+    margin: 100px auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.items {
+    width: 100%;
+    background-color: #FFF;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.items .item {
+    background-color: #215772;
+    color:#FFF;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 50px;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.97);
+}
